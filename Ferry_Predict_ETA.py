@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[2]:
+# In[3]:
 
 import time
 import pandas as pd
@@ -242,7 +242,7 @@ def GenerateSubPlot(xdf_r,xind,tsdf,trdf,xlastdock,xaterm,xTrainF,xTrainL,xTestF
             xdf = tsdf[ tsdf.n_leftdock == val['n_leftdock']]
 
             plt.subplot( 5*GrpSize,5,int( ind+1 + 4*(5*nX) ))
-            plt.title(val['n_leftdock'].strftime("%y/%m/%d %H:%M") + 
+            plt.title(val['n_leftdock'].strftime("%m/%d/%Y %H:%M") + 
                     ' ('+ xdf['n_time_trip'].iloc[0].astype(str)+ 'm, ' + round(xdf['n_SpeedTripAvg'].iloc[0],1).astype(str) + ') '+ xdf['name'].iloc[0] ,
                     color=title_color, fontsize=8, y=.97)
             L1, = plt.plot(xdf['n_time_past'], xdf['speed']           , 'g.' )
@@ -331,7 +331,7 @@ def run():
     vTMPDir      = '/Users/ekinezgi/Documents/FerryProject/'
     vLngTripFile = '/Users/ekinezgi/Documents/FerryProject/tmp/2017JanMar_LngTrip.csv'
     vCleanData   = '/Users/ekinezgi/Documents/FerryProject/2017JanMar_Data.csv'
-    vSubPltNmb   = 5
+    vSubPltNmb   = 40  ## Number of subplot will generate
     
     
 #     df_v = readData_ForMultiFiles(vCleanData,vCleanData_2)
