@@ -3,7 +3,7 @@ PREDICTION OF FERRY ARRIVAL TIMES USING MACHINE LEARNING
 
 Mehmet Duman
 University of Massachusetts, Dartmouth
-mtduman@gmail.com
+MattDuman7@gmail.com
 
 
 
